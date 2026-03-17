@@ -5,12 +5,20 @@ public class Main {
         Book b2 = new Book("Harry Potter", "J.K. Rowling", 500, true);
         Book b3 = new Book("Clean Code", "Robert Martin", 400, true);
 
-        b1.printInfo();
+        Reader r1 = new Reader("Ali", "Yilmaz", "R001", 0);
+        Reader r2 = new Reader("Ayse", "Demir", "R002", 1);
 
-        b1.borrow();
-        b1.borrow();
-
-        b1.returnBook();
         b1.printInfo();
+        b2.printInfo();
+        b3.printInfo();
+
+        r1.printData();
+        r2.printData();
+
+        r1.increaseBorrowedCount();
+        r1.increaseBorrowedCount();
+        r1.decreaseBorrowedCount();
+
+        r2.printData();
     }
 }
