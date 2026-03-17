@@ -16,7 +16,7 @@ public class Book {
         System.out.println("Author: " + author);
         System.out.println("Pages: " + pageCount);
         System.out.println("Available: " + available);
-        System.out.println("----------------");
+        System.out.println("-------------------");
     }
 
     public void borrow() {
@@ -31,5 +31,13 @@ public class Book {
     public void returnBook() {
         available = true;
         System.out.println(title + " returned.");
+    }
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }

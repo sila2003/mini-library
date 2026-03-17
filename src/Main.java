@@ -20,5 +20,21 @@ public class Main {
         r1.decreaseBorrowedCount();
 
         r2.printData();
+        Library lib = new Library(10);
+
+        lib.addBook(b1);
+        lib.addBook(b2);
+        lib.addBook(b3);
+
+        System.out.println("Available books:");
+        lib.printAvailableBooks();
+
+        System.out.println("Count: " + lib.countAvailableBooks());
+
+        Book found = lib.findBookByTitle("1984");
+        if (found != null) {
+            System.out.println("Found:");
+            found.printInfo();
+        }
     }
 }
